@@ -11,7 +11,7 @@ on:
 jobs:
   # Build job
   # TODO-STEP 3: Create your "Build" job
-  <Build>:
+  build:
     # TODO-STEP 3a: Specify the runner for this job
     runs-on: ubuntu-latest
     
@@ -34,10 +34,10 @@ jobs:
 
   # Test job
   # TODO-STEP 4: Create your "Test" job
-  <Test>:
+  test:
     # TODO-STEP 4a: Ensure this job runs after the build job.
     # NOTE: Make sure to use the Job Name used above in Line 14. 
-    needs: <Build>
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
