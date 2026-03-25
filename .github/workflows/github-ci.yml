@@ -6,8 +6,11 @@ name: <TEST CI/CD>
 # Uncomment the following lines to trigger the workflow on push and pull request events
 on:
   push:
+    paths:
+      - '**/*.py'
   pull_request:
-
+    paths:
+      - '**/*.py'
 
 jobs:
   # Build job
