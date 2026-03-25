@@ -21,10 +21,10 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'
 
@@ -46,10 +46,10 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: '3.9'
 
@@ -62,6 +62,6 @@ jobs:
     # TODO-STEP 4c: Add command to run tests
     # Hint: Use pytest to run your test cases
     - name: Run tests
-      run: pytest
+      run: pytest test_app.py -q
 
 # Remember to remove the '#' to uncomment lines when filling in the placeholders
